@@ -14,7 +14,7 @@ export default function Home() {
         if (token) {
           const config = {
             headers: {
-              "Authorization":`Bearer ${token}`
+              Authorization:`Bearer ${token}`
             }
           };
           const response = await axios.get("http://127.0.0.1:8000/api/user/", config)
